@@ -1,25 +1,26 @@
-This project scrapes individual book information from a Goodreads list, stores it in a SQLite database, and generates analytical visualizations. 
+This project scrapes individual book information from a Goodreads list, stores it in a SQLite database, and generates analytical visualizations.
 
 Technology Used:
-Python
-Selenium (web scraping automation)
-BeautifulSoup (HTML parsing)
-SQLite (database)
-SQL (data querying & aggregation)
-Matplotlib (data visualization)
+- Python  
+- Selenium (web scraping automation)  
+- BeautifulSoup (HTML parsing)  
+- SQLite (database)  
+- SQL (data querying & aggregation)  
+- Matplotlib (data visualization)  
 
-The database.py creates the database/n
-The scraper.py scrapes the goodreads data and inserts into the SQLite database
-The charts.py produces visual analytics for: Top rated books, Most frequent genres, and Page count distribution
+Project Structure:
+- database.py → Creates and initializes the SQLite database  
+- scraper.py → Scrapes Goodreads book data and inserts it into the database  
+- chart.py → Produces visual analytics for: Top rated books, Most frequent genres, and Page count distribution  
 
 Testing Instructions:
 
-First, install the dependencies by running
+First, install the dependencies by running:
 **pip install selenium beautifulsoup4 matplotlib**
 
 Then run:
 **python scraper.py**
 
-To generate an optional chart, you can run:
+To generate an optional chart, run:
 **python chart.py**
 
