@@ -1,5 +1,5 @@
 
-"""Automated Goodreads web scraper using Selenium and BeautifulSoup that extracts book metadata and stores 
+"""Automated Goodreads List web scraper using Selenium and BeautifulSoup that extracts book metadata and stores 
 it in a SQLite database for analysis and visualization"""
 
 import time
