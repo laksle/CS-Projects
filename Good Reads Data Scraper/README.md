@@ -23,4 +23,11 @@ Then run:
 
 To generate an optional chart, run:
 **python chart.py**
+The sql sample tables for 10 books from is listed below
+<img width="1744" height="466" alt="Screenshot 2026-04-17 200522" src="https://github.com/user-attachments/assets/64134209-9a67-4cde-937b-263195f4bfdf" />
+<img width="352" height="650" alt="Screenshot 2026-04-17 200648" src="https://github.com/user-attachments/assets/6d7fd142-17d8-4ce8-8498-349c42184e47" />
+
+The generated charts for this data is listed in the image below
+<img width="1800" height="500" alt="mycharts" src="https://github.com/user-attachments/assets/4b3fc5a1-322e-4863-95c0-0fe4eb9c3433" />
+
 
