@@ -39,14 +39,14 @@ docker compose build
 docker compose up
 
 You can test the API functionality by commands through the terminal
-For example, the following curl command creates a user in windows cmd terminal
+For example, the following curl command creates a user in a windows cmd terminal
 curl -X POST http://localhost:9000/register -H "Content-Type: application/json" -d "{\"username\":\"testuser\",\"password\":\"password123\"}"
 
-To login, you would enter
+To login, a example command would be:
 curl -X POST http://localhost:9000/login -H "Content-Type: application/json" -d "{\"username\":\"testuser\",\"password\":\"password123\"}"
 
-To verify token:
+To verify token, a example command would be:
 curl http://localhost:9000/verify -H "Authorization: Bearer YOUR_TOKEN"
 
-To create a course:
-curl -X POST http://localhost:9001/courses -H "Content-Type: application/json" -H "Authorization: Bearer YOUR_TOKEN" -d "{\"code\":\"CSE335\",\"name\":\"Object-Oriented Software Design\",\"professor\":\"Test Professor\"}"
+To create a course, a example command would be:
+curl -X POST http://localhost:9001/courses -H "Content-Type: application/json" -H "Authorization: Bearer YOUR_TOKEN" -d "{\"code\":\"CSE123\",\"name\":\"Software Design\",\"professor\":\"Test Professor\"}"
