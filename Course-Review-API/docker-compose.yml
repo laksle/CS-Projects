@@ -1,0 +1,32 @@
+services:
+
+  users:
+    build:
+      context: ./users
+      dockerfile: Dockerfile.users
+    ports:
+      - "9000:5000"
+    networks:
+      - course-network
+
+  courses:
+    build:
+      context: ./courses
+      dockerfile: Dockerfile.courses
+    ports:
+      - "9001:5000"
+    networks:
+      - course-network
+
+  reviews:
+    build:
+      context: ./reviews
+      dockerfile: Dockerfile.reviews
+    ports:
+      - "9002:5000"
+    networks:
+      - course-network
+
+networks:
+  course-network:
+    driver: bridge
