@@ -1,0 +1,12 @@
+FROM python:latest
+
+COPY courses.py /app/
+COPY courses.sql /app/
+
+WORKDIR /app
+
+ENV FLASK_APP=courses.py
+
+RUN pip install flask
+
+CMD ["flask", "run", "--host=0.0.0.0"]
