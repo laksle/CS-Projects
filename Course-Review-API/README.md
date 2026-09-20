@@ -33,7 +33,7 @@ Courses Service
 - Calculates course rating and difficulty averages
 
 Running in Docker:
-TO run this in docker, open terminal in the location of the docker-compose file. 
+To run this in docker, you can open terminal in the location of the docker-compose file. 
 Then run the following commands: 
 docker compose build
 docker compose up
