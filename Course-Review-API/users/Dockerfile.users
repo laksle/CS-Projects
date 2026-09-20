@@ -1,0 +1,12 @@
+FROM python:latest
+
+COPY users.py /app/
+COPY users.sql /app/
+COPY Jwt.py /app/
+COPY key.txt /app/
+
+WORKDIR /app
+
+RUN pip install flask requests pyjwt werkzeug
+
+CMD ["flask", "--app", "users.py", "run", "--host=0.0.0.0"]
