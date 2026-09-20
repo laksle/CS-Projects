@@ -1,0 +1,12 @@
+FROM python:latest
+
+COPY reviews.py /app/
+COPY reviews.sql /app/
+
+WORKDIR /app
+
+ENV FLASK_APP=reviews.py
+
+RUN pip install flask requests
+
+CMD ["flask", "run", "--host=0.0.0.0"]
